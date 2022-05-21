@@ -1,0 +1,7 @@
+use optica;
+db.clients.insertMany([{"nom": "Julio", "carrer": "Diputació","nombre_carrer": 45, "pis": 3, "porta": 8, "cp": 08391, "ciutat": "Barcelona", "telefon": 62538476, "email": "julio3@gmail.com", "data_registre": new Date(), "recomana": "Robert", "venda": [{"ulleres": ObjectID("idUlleres"), "venedor": "Ricard"}] },
+{"nom": "Toni", "carrer": "Casp", "nombre_carrer": 56, "pis": 2, "porta": 3, "cp": 08391, "ciutat": "Barcelona", "telefon": 648390567, "email": "toni34@gmail.com", "data_registre": new Date(), "recomana": "Julio", "venda": [{"ulleres": ObjectID("IdUlleres"), "venedor": "Lola"}]}]);
+db.ulleres.insertMany([{"nom_marca": "Ray-Ban", "grad_esq" : 1.25, "grad_dre" : 1.00, "muntura" : "media montura", "color_esq" : "vermell", "color_dre" : "vermell", "preu" : 94},
+{"nom_marca": "tous", "grad_esq" : 1.00, "grad_dre" : 1.25, "muntura" : "al aire", "color_esq" : "negre", "color_dre" : "negre", "preu" : 102}]);
+db.proveidor.insertMany([{"nom_prov" : "Scecolife", "carrer" : "plaça de Longcheng", "nombre_carrer" : 74, "pis" : 1, "porta" : 0, "cp" : 3007, "ciutat" : "Chengdu", "telefon" : 15158066632, "fax" : 8615158066632, "nif" : "A29268166", "marca_ulleres" : ObjectID("IdUlleres")},
+{"nom_prov" : "Arfly", "carrer" : " Dingtai Building Hedong District", "nombre_carrer" : 0, "pis" : 0, "porta" : 0, "cp" : 1809, "ciutat" : "Tianjin", "telefon" : 15156434612, "fax" : 8615902264346, "nif" : "B29805314", "marca_ulleres" : ObjectID("IdUlleres")}])
